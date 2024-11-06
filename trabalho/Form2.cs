@@ -275,10 +275,7 @@ namespace trabalho
             Close();
         }
 
-        private void toolStripButton2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        
 
         private void projetoTextBox_TextChanged(object sender, EventArgs e)
         {

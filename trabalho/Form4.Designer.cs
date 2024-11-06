@@ -45,11 +45,12 @@
             // senha_usuarioLabel
             // 
             senha_usuarioLabel.AutoSize = true;
-            senha_usuarioLabel.Location = new System.Drawing.Point(5, 19);
+            senha_usuarioLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F);
+            senha_usuarioLabel.Location = new System.Drawing.Point(9, 22);
             senha_usuarioLabel.Name = "senha_usuarioLabel";
-            senha_usuarioLabel.Size = new System.Drawing.Size(38, 13);
+            senha_usuarioLabel.Size = new System.Drawing.Size(48, 15);
             senha_usuarioLabel.TabIndex = 4;
-            senha_usuarioLabel.Text = "Senha";
+            senha_usuarioLabel.Text = "SENHA";
             // 
             // cadastro_projetoDataSet1
             // 
@@ -75,7 +76,7 @@
             // 
             this.senha_usuarioTextBox.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.senha_usuarioTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.admBindingSource, "senha_usuario", true));
-            this.senha_usuarioTextBox.Location = new System.Drawing.Point(49, 16);
+            this.senha_usuarioTextBox.Location = new System.Drawing.Point(69, 20);
             this.senha_usuarioTextBox.Name = "senha_usuarioTextBox";
             this.senha_usuarioTextBox.Size = new System.Drawing.Size(100, 20);
             this.senha_usuarioTextBox.TabIndex = 5;
@@ -85,10 +86,11 @@
             // Button_logar
             // 
             this.Button_logar.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Button_logar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Button_logar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_logar.Location = new System.Drawing.Point(165, 15);
+            this.Button_logar.Location = new System.Drawing.Point(179, 19);
             this.Button_logar.Name = "Button_logar";
-            this.Button_logar.Size = new System.Drawing.Size(39, 20);
+            this.Button_logar.Size = new System.Drawing.Size(39, 22);
             this.Button_logar.TabIndex = 6;
             this.Button_logar.Text = "OK";
             this.Button_logar.UseVisualStyleBackColor = false;
@@ -98,10 +100,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(257, 52);
+            this.ClientSize = new System.Drawing.Size(268, 62);
             this.Controls.Add(this.Button_logar);
             this.Controls.Add(senha_usuarioLabel);
             this.Controls.Add(this.senha_usuarioTextBox);
@@ -113,6 +115,7 @@
             this.MinimizeBox = false;
             this.Name = "Form_tela_admin";
             this.RightToLeftLayout = true;
+            this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Acesso Restrito";

@@ -52,7 +52,6 @@
             this.observacao_produtoTextBox = new System.Windows.Forms.TextBox();
             this.data_terminoDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.projetoTextBox = new System.Windows.Forms.TextBox();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.cadastro_producao_produtoBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -304,19 +303,6 @@
             this.projetoTextBox.TabIndex = 4;
             this.projetoTextBox.TextChanged += new System.EventHandler(this.projetoTextBox_TextChanged);
             // 
-            // toolStripButton2
-            // 
-            this.toolStripButton2.AutoSize = false;
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.ForeColor = System.Drawing.Color.Transparent;
-            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(26, 26);
-            this.toolStripButton2.Text = "Voltar";
-            this.toolStripButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
-            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
-            // 
             // bindingNavigatorAddNewItem
             // 
             this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
@@ -343,7 +329,6 @@
             this.cadastro_producao_produtoBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.cadastro_producao_produtoBindingNavigator.ImeMode = System.Windows.Forms.ImeMode.On;
             this.cadastro_producao_produtoBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton2,
             this.toolStripSeparator1,
             this.bindingNavigatorAddNewItem,
             this.toolStripSeparator2,
@@ -386,7 +371,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(623, 462);
-            this.ControlBox = false;
             this.Controls.Add(projetoLabel);
             this.Controls.Add(this.projetoTextBox);
             this.Controls.Add(data_terminoLabel);
@@ -416,8 +400,10 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "cadastro_produto";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cadastro de Produtos ";
+            this.Text = "    THE LED - CADASTRAR PRODUTOS";
+            this.TransparencyKey = System.Drawing.Color.Transparent;
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cadastro_projetoDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cadastro_producao_produtoBindingSource)).EndInit();
@@ -444,7 +430,6 @@
         private System.Windows.Forms.TextBox observacao_produtoTextBox;
         private System.Windows.Forms.DateTimePicker data_terminoDateTimePicker;
         private System.Windows.Forms.TextBox projetoTextBox;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.BindingNavigator cadastro_producao_produtoBindingNavigator;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton cadastro_producao_produtoBindingNavigatorSaveItem;

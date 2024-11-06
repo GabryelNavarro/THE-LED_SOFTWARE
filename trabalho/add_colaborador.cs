@@ -151,5 +151,10 @@ namespace trabalho
         {
             this.Close();
         }
+
+        private void data_admissaoDateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

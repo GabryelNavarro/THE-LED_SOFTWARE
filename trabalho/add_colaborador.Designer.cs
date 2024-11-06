@@ -71,7 +71,7 @@
             // 
             data_admissaoLabel.AutoSize = true;
             data_admissaoLabel.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            data_admissaoLabel.Location = new System.Drawing.Point(28, 83);
+            data_admissaoLabel.Location = new System.Drawing.Point(31, 95);
             data_admissaoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             data_admissaoLabel.Name = "data_admissaoLabel";
             data_admissaoLabel.Size = new System.Drawing.Size(37, 13);
@@ -83,7 +83,7 @@
             // 
             funcaoLabel.AutoSize = true;
             funcaoLabel.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            funcaoLabel.Location = new System.Drawing.Point(28, 108);
+            funcaoLabel.Location = new System.Drawing.Point(435, 56);
             funcaoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             funcaoLabel.Name = "funcaoLabel";
             funcaoLabel.Size = new System.Drawing.Size(55, 13);
@@ -94,7 +94,7 @@
             // 
             observacao_sobre_colaboradorLabel.AutoSize = true;
             observacao_sobre_colaboradorLabel.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            observacao_sobre_colaboradorLabel.Location = new System.Drawing.Point(28, 167);
+            observacao_sobre_colaboradorLabel.Location = new System.Drawing.Point(36, 134);
             observacao_sobre_colaboradorLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             observacao_sobre_colaboradorLabel.Name = "observacao_sobre_colaboradorLabel";
             observacao_sobre_colaboradorLabel.Size = new System.Drawing.Size(172, 13);
@@ -129,7 +129,7 @@
             this.colaboradoresBindingNavigator.BindingSource = this.colaboradoresBindingSource;
             this.colaboradoresBindingNavigator.CountItem = null;
             this.colaboradoresBindingNavigator.DeleteItem = null;
-            this.colaboradoresBindingNavigator.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colaboradoresBindingNavigator.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.colaboradoresBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
             this.bindingNavigatorSeparator,
@@ -142,7 +142,7 @@
             this.colaboradoresBindingNavigator.Name = "colaboradoresBindingNavigator";
             this.colaboradoresBindingNavigator.PositionItem = null;
             this.colaboradoresBindingNavigator.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.colaboradoresBindingNavigator.Size = new System.Drawing.Size(530, 25);
+            this.colaboradoresBindingNavigator.Size = new System.Drawing.Size(782, 35);
             this.colaboradoresBindingNavigator.TabIndex = 0;
             this.colaboradoresBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -150,23 +150,23 @@
             // 
             this.toolStripButton1.AutoSize = false;
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton1.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(50, 30);
+            this.toolStripButton1.Size = new System.Drawing.Size(60, 30);
             this.toolStripButton1.Text = "VOLTAR";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click_1);
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 35);
             // 
             // colaboradoresBindingNavigatorSaveItem
             // 
             this.colaboradoresBindingNavigatorSaveItem.AutoSize = false;
             this.colaboradoresBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.colaboradoresBindingNavigatorSaveItem.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colaboradoresBindingNavigatorSaveItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.colaboradoresBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("colaboradoresBindingNavigatorSaveItem.Image")));
             this.colaboradoresBindingNavigatorSaveItem.Name = "colaboradoresBindingNavigatorSaveItem";
             this.colaboradoresBindingNavigatorSaveItem.Size = new System.Drawing.Size(55, 30);
@@ -175,7 +175,7 @@
             // 
             // nome_colaboradorTextBox
             // 
-            this.nome_colaboradorTextBox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.nome_colaboradorTextBox.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.nome_colaboradorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.colaboradoresBindingSource, "Nome_colaborador", true));
             this.nome_colaboradorTextBox.Location = new System.Drawing.Point(174, 53);
             this.nome_colaboradorTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -185,24 +185,25 @@
             // 
             // data_admissaoDateTimePicker
             // 
-            this.data_admissaoDateTimePicker.CalendarMonthBackground = System.Drawing.SystemColors.ControlLight;
+            this.data_admissaoDateTimePicker.CalendarMonthBackground = System.Drawing.SystemColors.ButtonFace;
             this.data_admissaoDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.colaboradoresBindingSource, "Data_admissao", true));
             this.data_admissaoDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.data_admissaoDateTimePicker.Location = new System.Drawing.Point(174, 79);
+            this.data_admissaoDateTimePicker.Location = new System.Drawing.Point(174, 95);
             this.data_admissaoDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.data_admissaoDateTimePicker.Name = "data_admissaoDateTimePicker";
-            this.data_admissaoDateTimePicker.Size = new System.Drawing.Size(121, 21);
+            this.data_admissaoDateTimePicker.Size = new System.Drawing.Size(233, 21);
             this.data_admissaoDateTimePicker.TabIndex = 6;
+            this.data_admissaoDateTimePicker.ValueChanged += new System.EventHandler(this.data_admissaoDateTimePicker_ValueChanged);
             // 
             // observacao_sobre_colaboradorTextBox
             // 
-            this.observacao_sobre_colaboradorTextBox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.observacao_sobre_colaboradorTextBox.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.observacao_sobre_colaboradorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.colaboradoresBindingSource, "Observacao_sobre_colaborador", true));
-            this.observacao_sobre_colaboradorTextBox.Location = new System.Drawing.Point(31, 183);
+            this.observacao_sobre_colaboradorTextBox.Location = new System.Drawing.Point(31, 158);
             this.observacao_sobre_colaboradorTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.observacao_sobre_colaboradorTextBox.Multiline = true;
             this.observacao_sobre_colaboradorTextBox.Name = "observacao_sobre_colaboradorTextBox";
-            this.observacao_sobre_colaboradorTextBox.Size = new System.Drawing.Size(418, 144);
+            this.observacao_sobre_colaboradorTextBox.Size = new System.Drawing.Size(717, 209);
             this.observacao_sobre_colaboradorTextBox.TabIndex = 12;
             // 
             // comboBox1
@@ -212,6 +213,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.colaboradoresBindingSource, "Funcao", true));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
@@ -220,9 +222,9 @@
             "Técnico",
             "Analista",
             "Asistente"});
-            this.comboBox1.Location = new System.Drawing.Point(174, 105);
+            this.comboBox1.Location = new System.Drawing.Point(516, 53);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(233, 21);
+            this.comboBox1.Size = new System.Drawing.Size(201, 21);
             this.comboBox1.TabIndex = 13;
             // 
             // add_colaborador
@@ -230,7 +232,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(530, 353);
+            this.ClientSize = new System.Drawing.Size(782, 379);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(nome_colaboradorLabel);
             this.Controls.Add(this.nome_colaboradorTextBox);
@@ -247,7 +249,7 @@
             this.MinimizeBox = false;
             this.Name = "add_colaborador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cadastro de colaboradores";
+            this.Text = "THE LED - CADASTRAR COLABORADOR";
             this.Load += new System.EventHandler(this.add_colaborador_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cadastro_projetoDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.colaboradoresBindingSource)).EndInit();
