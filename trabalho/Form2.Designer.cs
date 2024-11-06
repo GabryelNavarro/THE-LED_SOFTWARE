@@ -185,6 +185,8 @@
             // 
             // colaboradores_idTextBox
             // 
+            this.colaboradores_idTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.colaboradores_idTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllSystemSources;
             this.colaboradores_idTextBox.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.colaboradores_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cadastro_producao_produtoBindingSource, "Colaboradores_id", true));
             this.colaboradores_idTextBox.Location = new System.Drawing.Point(17, 117);
@@ -292,6 +294,8 @@
             // 
             // projetoTextBox
             // 
+            this.projetoTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.projetoTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.projetoTextBox.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.projetoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cadastro_producao_produtoBindingSource, "Projeto", true));
             this.projetoTextBox.Location = new System.Drawing.Point(193, 117);
@@ -316,7 +320,7 @@
             // bindingNavigatorAddNewItem
             // 
             this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.bindingNavigatorAddNewItem.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bindingNavigatorAddNewItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bindingNavigatorAddNewItem.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
@@ -370,9 +374,9 @@
             // 
             // cadastro_producao_produtoBindingNavigatorSaveItem
             // 
-            this.cadastro_producao_produtoBindingNavigatorSaveItem.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cadastro_producao_produtoBindingNavigatorSaveItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cadastro_producao_produtoBindingNavigatorSaveItem.Name = "cadastro_producao_produtoBindingNavigatorSaveItem";
-            this.cadastro_producao_produtoBindingNavigatorSaveItem.Size = new System.Drawing.Size(57, 30);
+            this.cadastro_producao_produtoBindingNavigatorSaveItem.Size = new System.Drawing.Size(56, 30);
             this.cadastro_producao_produtoBindingNavigatorSaveItem.Text = "SALVAR";
             this.cadastro_producao_produtoBindingNavigatorSaveItem.Click += new System.EventHandler(this.cadastro_producao_produtoBindingNavigatorSaveItem_Click);
             // 

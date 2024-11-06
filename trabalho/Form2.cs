@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient; // Adicione essa referência
@@ -40,37 +41,32 @@ namespace trabalho
 
         private void ConfigureAutoComplete()
         {
-            // Produto_modelo
-            produto_modeloTextBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            produto_modeloTextBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
-            //
-            //Identificacao colaborador
-            colaboradores_idTextBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            colaboradores_idTextBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
-            //
-            //Projeto
-            projetoTextBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            projetoTextBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
-            //
+            //NOVA CONFIGURAÇÃO DE AUTOCOMPLETE
 
+            
+                // Para Produto_modelo
+                var autoCompleteModeloProdutos = new AutoCompleteStringCollection();
+                LoadModeloProdutos(autoCompleteModeloProdutos);
+                produto_modeloTextBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+                produto_modeloTextBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
+                produto_modeloTextBox.AutoCompleteCustomSource = autoCompleteModeloProdutos;
 
-            // Adiciona os itens à fonte de autocompletar Produto/Modelo
-            AutoCompleteStringCollection autoCompleteCollection = new AutoCompleteStringCollection();
-            LoadModeloProdutos(autoCompleteCollection);
-            produto_modeloTextBox.AutoCompleteCustomSource = autoCompleteCollection;
-            //
-            // Adiciona os itens à fonte de autocompletar ID Colaborador
-            LoadId_colaborador(autoCompleteCollection);
-            colaboradores_idTextBox.AutoCompleteCustomSource = autoCompleteCollection;
-            //
-            // Adiciona os itens à fonte de autocompletar Projeto
-            LoadProjetos(autoCompleteCollection);
-            projetoTextBox.AutoCompleteCustomSource = autoCompleteCollection;
+                // Para ID do Colaborador
+                var autoCompleteIdColaborador = new AutoCompleteStringCollection();
+                LoadId_colaborador(autoCompleteIdColaborador);
+                colaboradores_idTextBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+                colaboradores_idTextBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
+                colaboradores_idTextBox.AutoCompleteCustomSource = autoCompleteIdColaborador;
 
-
-
-
+                // Para Projeto
+                var autoCompleteProjetos = new AutoCompleteStringCollection();
+                LoadProjetos(autoCompleteProjetos);
+                projetoTextBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+                projetoTextBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
+                projetoTextBox.AutoCompleteCustomSource = autoCompleteProjetos;
+            
         }
+
         private void LoadProjetos(AutoCompleteStringCollection autoCompleteCollection)
         {
             try
@@ -290,6 +286,16 @@ namespace trabalho
 
             // Restaura o cursor à posição correta
             projetoTextBox.SelectionStart = cursorPosition;
+
+            
+
+
+
+
+
+
+
+
         }
 
         private void cadastro_producao_produtoDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -353,8 +359,23 @@ namespace trabalho
             // Transforma o texto em maiúsculas
             qtd_produtoTextBox.Text = qtd_produtoTextBox.Text.ToUpper();
 
+
             // Restaura o cursor à posição correta
             qtd_produtoTextBox.SelectionStart = cursorPosition;
         }
+        
+                                        
+
+       
+
+
+
+
+
+
+
+
+
+
     }
 }
