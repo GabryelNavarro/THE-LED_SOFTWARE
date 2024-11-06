@@ -81,36 +81,36 @@ SELECT Id_colaborador, Nome_colaborador, Data_admissao, Funcao, Media_colaborado
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="Cadastro_projetoDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="Cadastro_projetoDataSet2" msprop:Generator_DataSetName="Cadastro_projetoDataSet2">
+  <xs:element name="Cadastro_projetoDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Cadastro_projetoDataSet2" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Cadastro_projetoDataSet2">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="colaboradores" msprop:Generator_RowEvHandlerName="colaboradoresRowChangeEventHandler" msprop:Generator_RowDeletedName="colaboradoresRowDeleted" msprop:Generator_RowDeletingName="colaboradoresRowDeleting" msprop:Generator_RowEvArgName="colaboradoresRowChangeEvent" msprop:Generator_TablePropName="colaboradores" msprop:Generator_RowChangedName="colaboradoresRowChanged" msprop:Generator_RowChangingName="colaboradoresRowChanging" msprop:Generator_TableClassName="colaboradoresDataTable" msprop:Generator_RowClassName="colaboradoresRow" msprop:Generator_TableVarName="tablecolaboradores" msprop:Generator_UserTableName="colaboradores">
+        <xs:element name="colaboradores" msprop:Generator_RowClassName="colaboradoresRow" msprop:Generator_RowEvHandlerName="colaboradoresRowChangeEventHandler" msprop:Generator_RowDeletedName="colaboradoresRowDeleted" msprop:Generator_RowDeletingName="colaboradoresRowDeleting" msprop:Generator_RowEvArgName="colaboradoresRowChangeEvent" msprop:Generator_TablePropName="colaboradores" msprop:Generator_RowChangedName="colaboradoresRowChanged" msprop:Generator_UserTableName="colaboradores" msprop:Generator_RowChangingName="colaboradoresRowChanging" msprop:Generator_TableClassName="colaboradoresDataTable" msprop:Generator_TableVarName="tablecolaboradores">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Id_colaborador" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="Id_colaborador" msprop:Generator_ColumnPropNameInTable="Id_colaboradorColumn" msprop:Generator_ColumnVarNameInTable="columnId_colaborador" msprop:Generator_UserColumnName="Id_colaborador" type="xs:int" />
-              <xs:element name="Nome_colaborador" msprop:Generator_ColumnPropNameInRow="Nome_colaborador" msprop:Generator_ColumnPropNameInTable="Nome_colaboradorColumn" msprop:Generator_ColumnVarNameInTable="columnNome_colaborador" msprop:Generator_UserColumnName="Nome_colaborador">
+              <xs:element name="Id_colaborador" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="Id_colaborador" msprop:Generator_ColumnPropNameInTable="Id_colaboradorColumn" msprop:Generator_ColumnPropNameInRow="Id_colaborador" msprop:Generator_ColumnVarNameInTable="columnId_colaborador" type="xs:int" />
+              <xs:element name="Nome_colaborador" msprop:Generator_UserColumnName="Nome_colaborador" msprop:Generator_ColumnPropNameInTable="Nome_colaboradorColumn" msprop:Generator_ColumnPropNameInRow="Nome_colaborador" msprop:Generator_ColumnVarNameInTable="columnNome_colaborador">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="100" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Data_admissao" msprop:Generator_ColumnPropNameInRow="Data_admissao" msprop:Generator_ColumnPropNameInTable="Data_admissaoColumn" msprop:Generator_ColumnVarNameInTable="columnData_admissao" msprop:Generator_UserColumnName="Data_admissao" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="Funcao" msprop:Generator_ColumnPropNameInRow="Funcao" msprop:Generator_ColumnPropNameInTable="FuncaoColumn" msprop:Generator_ColumnVarNameInTable="columnFuncao" msprop:Generator_UserColumnName="Funcao">
+              <xs:element name="Data_admissao" msprop:Generator_UserColumnName="Data_admissao" msprop:Generator_ColumnPropNameInTable="Data_admissaoColumn" msprop:Generator_ColumnPropNameInRow="Data_admissao" msprop:Generator_ColumnVarNameInTable="columnData_admissao" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Funcao" msprop:Generator_UserColumnName="Funcao" msprop:Generator_ColumnPropNameInTable="FuncaoColumn" msprop:Generator_ColumnPropNameInRow="Funcao" msprop:Generator_ColumnVarNameInTable="columnFuncao">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="100" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Media_colaborador" msprop:Generator_ColumnPropNameInRow="Media_colaborador" msprop:Generator_ColumnPropNameInTable="Media_colaboradorColumn" msprop:Generator_ColumnVarNameInTable="columnMedia_colaborador" msprop:Generator_UserColumnName="Media_colaborador" minOccurs="0">
+              <xs:element name="Media_colaborador" msprop:Generator_UserColumnName="Media_colaborador" msprop:Generator_ColumnPropNameInTable="Media_colaboradorColumn" msprop:Generator_ColumnPropNameInRow="Media_colaborador" msprop:Generator_ColumnVarNameInTable="columnMedia_colaborador" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="4" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Observacao_sobre_colaborador" msprop:Generator_ColumnPropNameInRow="Observacao_sobre_colaborador" msprop:Generator_ColumnPropNameInTable="Observacao_sobre_colaboradorColumn" msprop:Generator_ColumnVarNameInTable="columnObservacao_sobre_colaborador" msprop:Generator_UserColumnName="Observacao_sobre_colaborador" minOccurs="0">
+              <xs:element name="Observacao_sobre_colaborador" msprop:Generator_UserColumnName="Observacao_sobre_colaborador" msprop:Generator_ColumnPropNameInTable="Observacao_sobre_colaboradorColumn" msprop:Generator_ColumnPropNameInRow="Observacao_sobre_colaborador" msprop:Generator_ColumnVarNameInTable="columnObservacao_sobre_colaborador" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />

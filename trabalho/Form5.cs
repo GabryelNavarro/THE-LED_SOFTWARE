@@ -36,7 +36,7 @@ namespace trabalho
             }
 
             // Atualiza o texto do Label com a contagem de linhas
-            qtd_colaborador.Text = "QUANTIDADE DE COLABORADORES: " + rowCount.ToString();
+            qtd_colaborador.Text = "QUANTIDADE DE COLABORADORES:  " + rowCount.ToString();
         }
 
 

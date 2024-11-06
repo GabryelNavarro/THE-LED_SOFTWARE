@@ -43,28 +43,28 @@ namespace trabalho
         {
             //NOVA CONFIGURAÇÃO DE AUTOCOMPLETE
 
-            
-                // Para Produto_modelo
-                var autoCompleteModeloProdutos = new AutoCompleteStringCollection();
-                LoadModeloProdutos(autoCompleteModeloProdutos);
-                produto_modeloTextBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-                produto_modeloTextBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
-                produto_modeloTextBox.AutoCompleteCustomSource = autoCompleteModeloProdutos;
 
-                // Para ID do Colaborador
-                var autoCompleteIdColaborador = new AutoCompleteStringCollection();
-                LoadId_colaborador(autoCompleteIdColaborador);
-                colaboradores_idTextBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-                colaboradores_idTextBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
-                colaboradores_idTextBox.AutoCompleteCustomSource = autoCompleteIdColaborador;
+            // Para Produto_modelo
+            var autoCompleteModeloProdutos = new AutoCompleteStringCollection();
+            LoadModeloProdutos(autoCompleteModeloProdutos);
+            produto_modeloTextBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            produto_modeloTextBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            produto_modeloTextBox.AutoCompleteCustomSource = autoCompleteModeloProdutos;
 
-                // Para Projeto
-                var autoCompleteProjetos = new AutoCompleteStringCollection();
-                LoadProjetos(autoCompleteProjetos);
-                projetoTextBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-                projetoTextBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
-                projetoTextBox.AutoCompleteCustomSource = autoCompleteProjetos;
-            
+            // Para ID do Colaborador
+            var autoCompleteIdColaborador = new AutoCompleteStringCollection();
+            LoadId_colaborador(autoCompleteIdColaborador);
+            colaboradores_idTextBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            colaboradores_idTextBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            colaboradores_idTextBox.AutoCompleteCustomSource = autoCompleteIdColaborador;
+
+            // Para Projeto
+            var autoCompleteProjetos = new AutoCompleteStringCollection();
+            LoadProjetos(autoCompleteProjetos);
+            projetoTextBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            projetoTextBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            projetoTextBox.AutoCompleteCustomSource = autoCompleteProjetos;
+
         }
 
         private void LoadProjetos(AutoCompleteStringCollection autoCompleteCollection)
@@ -94,6 +94,7 @@ namespace trabalho
                 MessageBox.Show("Por favor, verifique sua conexão com a internet e tente novamente", "Sem Aceeso á Internet", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 form_principal carregar = new form_principal();
                 carregar.ShowDialog();
+                
 
             }
         }
@@ -122,15 +123,28 @@ namespace trabalho
                         }
                     }
                 }
+
+
+
             }
             catch (System.InvalidOperationException)
             {
                 MessageBox.Show("Por favor, verifique sua conexão com a internet e tente novamente", "Sem Aceeso á Internet", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 form_principal carregar = new form_principal();
                 carregar.ShowDialog();
+               
+
 
             }
+
+            catch (System.Data.SqlClient.SqlException)
+            {
+                MessageBox.Show("Por favor, verifique sua conexão com a internet e tente novamente", "Sem Aceeso á Internet", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                form_principal carregar = new form_principal();
+                carregar.ShowDialog();
+                
             }
+        } 
 
         private void LoadId_colaborador(AutoCompleteStringCollection autoCompleteCollection)
         {
@@ -363,19 +377,10 @@ namespace trabalho
             // Restaura o cursor à posição correta
             qtd_produtoTextBox.SelectionStart = cursorPosition;
         }
-        
-                                        
 
-       
+        private void observacao_produtoLabel_Click(object sender, EventArgs e)
+        {
 
-
-
-
-
-
-
-
-
-
+        }
     }
 }

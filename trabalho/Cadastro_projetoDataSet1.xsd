@@ -39,21 +39,21 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="Cadastro_projetoDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="Cadastro_projetoDataSet1" msprop:Generator_DataSetName="Cadastro_projetoDataSet1">
+  <xs:element name="Cadastro_projetoDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Cadastro_projetoDataSet1" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Cadastro_projetoDataSet1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Adm" msprop:Generator_RowEvHandlerName="AdmRowChangeEventHandler" msprop:Generator_RowDeletedName="AdmRowDeleted" msprop:Generator_RowDeletingName="AdmRowDeleting" msprop:Generator_RowEvArgName="AdmRowChangeEvent" msprop:Generator_TablePropName="Adm" msprop:Generator_RowChangedName="AdmRowChanged" msprop:Generator_RowChangingName="AdmRowChanging" msprop:Generator_TableClassName="AdmDataTable" msprop:Generator_RowClassName="AdmRow" msprop:Generator_TableVarName="tableAdm" msprop:Generator_UserTableName="Adm">
+        <xs:element name="Adm" msprop:Generator_RowClassName="AdmRow" msprop:Generator_RowEvHandlerName="AdmRowChangeEventHandler" msprop:Generator_RowDeletedName="AdmRowDeleted" msprop:Generator_RowDeletingName="AdmRowDeleting" msprop:Generator_RowEvArgName="AdmRowChangeEvent" msprop:Generator_TablePropName="Adm" msprop:Generator_RowChangedName="AdmRowChanged" msprop:Generator_UserTableName="Adm" msprop:Generator_RowChangingName="AdmRowChanging" msprop:Generator_TableClassName="AdmDataTable" msprop:Generator_TableVarName="tableAdm">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Id_adm" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="Id_adm" msprop:Generator_ColumnPropNameInTable="Id_admColumn" msprop:Generator_ColumnVarNameInTable="columnId_adm" msprop:Generator_UserColumnName="Id_adm" type="xs:int" />
-              <xs:element name="Nome_usuario_adm" msprop:Generator_ColumnPropNameInRow="Nome_usuario_adm" msprop:Generator_ColumnPropNameInTable="Nome_usuario_admColumn" msprop:Generator_ColumnVarNameInTable="columnNome_usuario_adm" msprop:Generator_UserColumnName="Nome_usuario_adm">
+              <xs:element name="Id_adm" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="Id_adm" msprop:Generator_ColumnPropNameInTable="Id_admColumn" msprop:Generator_ColumnPropNameInRow="Id_adm" msprop:Generator_ColumnVarNameInTable="columnId_adm" type="xs:int" />
+              <xs:element name="Nome_usuario_adm" msprop:Generator_UserColumnName="Nome_usuario_adm" msprop:Generator_ColumnPropNameInTable="Nome_usuario_admColumn" msprop:Generator_ColumnPropNameInRow="Nome_usuario_adm" msprop:Generator_ColumnVarNameInTable="columnNome_usuario_adm">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="200" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="senha_usuario" msprop:Generator_ColumnPropNameInRow="senha_usuario" msprop:Generator_ColumnPropNameInTable="senha_usuarioColumn" msprop:Generator_ColumnVarNameInTable="columnsenha_usuario" msprop:Generator_UserColumnName="senha_usuario">
+              <xs:element name="senha_usuario" msprop:Generator_UserColumnName="senha_usuario" msprop:Generator_ColumnPropNameInTable="senha_usuarioColumn" msprop:Generator_ColumnPropNameInRow="senha_usuario" msprop:Generator_ColumnVarNameInTable="columnsenha_usuario">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="30" />

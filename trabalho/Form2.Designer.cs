@@ -136,12 +136,13 @@
             // observacao_produtoLabel
             // 
             observacao_produtoLabel.AutoSize = true;
-            observacao_produtoLabel.Location = new System.Drawing.Point(14, 215);
+            observacao_produtoLabel.Location = new System.Drawing.Point(19, 206);
             observacao_produtoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             observacao_produtoLabel.Name = "observacao_produtoLabel";
             observacao_produtoLabel.Size = new System.Drawing.Size(134, 13);
             observacao_produtoLabel.TabIndex = 13;
             observacao_produtoLabel.Text = "RELATÓRIO PRODUTO";
+            observacao_produtoLabel.Click += new System.EventHandler(this.observacao_produtoLabel_Click);
             // 
             // data_terminoLabel
             // 
@@ -269,12 +270,12 @@
             this.observacao_produtoTextBox.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.observacao_produtoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cadastro_producao_produtoBindingSource, "Observacao_produto", true));
             this.observacao_produtoTextBox.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.observacao_produtoTextBox.Location = new System.Drawing.Point(13, 231);
+            this.observacao_produtoTextBox.Location = new System.Drawing.Point(22, 228);
             this.observacao_produtoTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.observacao_produtoTextBox.MaximumSize = new System.Drawing.Size(500, 500);
             this.observacao_produtoTextBox.Multiline = true;
             this.observacao_produtoTextBox.Name = "observacao_produtoTextBox";
-            this.observacao_produtoTextBox.Size = new System.Drawing.Size(419, 200);
+            this.observacao_produtoTextBox.Size = new System.Drawing.Size(500, 200);
             this.observacao_produtoTextBox.TabIndex = 9;
             // 
             // data_terminoDateTimePicker
@@ -395,12 +396,12 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.ImeMode = System.Windows.Forms.ImeMode.On;
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "cadastro_produto";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "    THE LED - CADASTRAR PRODUTOS";
             this.TransparencyKey = System.Drawing.Color.Transparent;

@@ -298,7 +298,6 @@
             this.cadastro_producao_produtoDataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.cadastro_producao_produtoDataGridView2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cadastro_producao_produtoDataGridView2.AutoGenerateColumns = false;
-            this.cadastro_producao_produtoDataGridView2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.cadastro_producao_produtoDataGridView2.BackgroundColor = System.Drawing.SystemColors.Control;
             this.cadastro_producao_produtoDataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.cadastro_producao_produtoDataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
@@ -358,6 +357,7 @@
             this.dataGridViewTextBoxColumn22.HeaderText = "NOME";
             this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
             this.dataGridViewTextBoxColumn22.ReadOnly = true;
+            this.dataGridViewTextBoxColumn22.Width = 64;
             // 
             // dataGridViewTextBoxColumn23
             // 
@@ -365,6 +365,7 @@
             this.dataGridViewTextBoxColumn23.HeaderText = "DATA INÍCIO";
             this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
             this.dataGridViewTextBoxColumn23.ReadOnly = true;
+            this.dataGridViewTextBoxColumn23.Width = 96;
             // 
             // dataGridViewTextBoxColumn24
             // 
@@ -372,6 +373,7 @@
             this.dataGridViewTextBoxColumn24.HeaderText = "PROJETO";
             this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
             this.dataGridViewTextBoxColumn24.ReadOnly = true;
+            this.dataGridViewTextBoxColumn24.Width = 82;
             // 
             // dataGridViewTextBoxColumn25
             // 
@@ -379,7 +381,7 @@
             this.dataGridViewTextBoxColumn25.HeaderText = "PRODUTO/MODELO";
             this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
             this.dataGridViewTextBoxColumn25.ReadOnly = true;
-            this.dataGridViewTextBoxColumn25.Width = 150;
+            this.dataGridViewTextBoxColumn25.Width = 137;
             // 
             // dataGridViewTextBoxColumn26
             // 
@@ -387,6 +389,7 @@
             this.dataGridViewTextBoxColumn26.HeaderText = "S/N";
             this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
             this.dataGridViewTextBoxColumn26.ReadOnly = true;
+            this.dataGridViewTextBoxColumn26.Width = 52;
             // 
             // dataGridViewTextBoxColumn27
             // 
@@ -394,13 +397,16 @@
             this.dataGridViewTextBoxColumn27.HeaderText = "STATUS";
             this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
             this.dataGridViewTextBoxColumn27.ReadOnly = true;
+            this.dataGridViewTextBoxColumn27.Width = 75;
             // 
             // dataGridViewTextBoxColumn28
             // 
+            this.dataGridViewTextBoxColumn28.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.dataGridViewTextBoxColumn28.DataPropertyName = "Observacao_produto";
             this.dataGridViewTextBoxColumn28.HeaderText = "HISTÓRICO PRODUTO";
             this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
             this.dataGridViewTextBoxColumn28.ReadOnly = true;
+            this.dataGridViewTextBoxColumn28.Width = 148;
             // 
             // dataGridViewTextBoxColumn29
             // 
@@ -408,6 +414,7 @@
             this.dataGridViewTextBoxColumn29.HeaderText = "QUANTIDADE";
             this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
             this.dataGridViewTextBoxColumn29.ReadOnly = true;
+            this.dataGridViewTextBoxColumn29.Width = 103;
             // 
             // dataGridViewTextBoxColumn30
             // 
@@ -415,6 +422,7 @@
             this.dataGridViewTextBoxColumn30.HeaderText = "DATA TÉRMINO";
             this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
             this.dataGridViewTextBoxColumn30.ReadOnly = true;
+            this.dataGridViewTextBoxColumn30.Width = 114;
             // 
             // date_pic_inicio
             // 
@@ -544,10 +552,12 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ComboBox_nome);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.MaximizeBox = false;
             this.Name = "listagem_producao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "THE LED - PRODUTOS";
             this.Load += new System.EventHandler(this.listagem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cadastro_projetoDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cadastro_producao_produtoBindingSource2)).EndInit();
@@ -630,6 +640,7 @@
         private System.Windows.Forms.Button button_limpar_filtro;
         private System.Windows.Forms.Label labelTotalP;
         private System.Windows.Forms.Label total_produtos;
+        private System.Windows.Forms.Button button_voltar;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
@@ -640,6 +651,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn28;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn29;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn30;
-        private System.Windows.Forms.Button button_voltar;
     }
 }
