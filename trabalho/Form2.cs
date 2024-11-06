@@ -202,6 +202,9 @@ namespace trabalho
             {
                 MessageBox.Show($"Erro ao salvar: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            ConfigureAutoComplete();
+
+
         }
 
         private void EnsureValidDates()
