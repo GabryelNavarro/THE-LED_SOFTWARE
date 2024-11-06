@@ -45,8 +45,16 @@ namespace trabalho
         private void Form5_Load(object sender, EventArgs e)
         {
             // Esta linha de código carrega dados na tabela 'cadastro_projetoDataSet2.colaboradores'.
-            this.colaboradoresTableAdapter.Fill(this.cadastro_projetoDataSet2.colaboradores);
-            
+            try
+            {
+                this.colaboradoresTableAdapter.Fill(this.cadastro_projetoDataSet2.colaboradores);
+            }
+
+            catch (Exception ex) 
+            {
+                MessageBox.Show("Erro ao ler dados do Servidor. Por favor, reinicie o programa!",
+                "Erro no sistema!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             //---------------------------------------------------
             //COMBOX FUNÇÃO
 

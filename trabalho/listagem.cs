@@ -115,13 +115,23 @@
 
             }
 
-            private void listagem_Load(object sender, EventArgs e)
-            {
-            
-                this.cadastro_producao_produtoTableAdapter3.Fill(this.cadastro_projetoDataSet3.cadastro_producao_produto);
+        private void listagem_Load(object sender, EventArgs e)
+        {
+            try {
 
-                // Preencher a ComboBox com nomes de colaboradores únicos
-                var nomesDistintos = cadastro_projetoDataSet3.cadastro_producao_produto
+
+                this.cadastro_producao_produtoTableAdapter3.Fill(this.cadastro_projetoDataSet3.cadastro_producao_produto);
+                    }
+
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao ler dados do Servidor. Por favor, reinicie o programa!",
+                "Erro no sistema!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            // Preencher a ComboBox com nomes de colaboradores únicos
+            var nomesDistintos = cadastro_projetoDataSet3.cadastro_producao_produto
                     .AsEnumerable()
                     .Select(row => row.Field<string>("Nome_colaborador"))
                     .Distinct()

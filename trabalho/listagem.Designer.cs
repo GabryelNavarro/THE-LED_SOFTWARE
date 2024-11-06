@@ -60,6 +60,14 @@
             this.cadastro_producao_produtoTableAdapter3 = new trabalho.Cadastro_projetoDataSet3TableAdapters.cadastro_producao_produtoTableAdapter();
             this.tableAdapterManager3 = new trabalho.Cadastro_projetoDataSet3TableAdapters.TableAdapterManager();
             this.cadastro_producao_produtoDataGridView2 = new System.Windows.Forms.DataGridView();
+            this.date_pic_inicio = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.date_pic_final = new System.Windows.Forms.DateTimePicker();
+            this.button_limpar_filtro = new System.Windows.Forms.Button();
+            this.labelTotalP = new System.Windows.Forms.Label();
+            this.total_produtos = new System.Windows.Forms.Label();
+            this.button_voltar = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,14 +78,6 @@
             this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.date_pic_inicio = new System.Windows.Forms.DateTimePicker();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.date_pic_final = new System.Windows.Forms.DateTimePicker();
-            this.button_limpar_filtro = new System.Windows.Forms.Button();
-            this.labelTotalP = new System.Windows.Forms.Label();
-            this.total_produtos = new System.Windows.Forms.Label();
-            this.button_voltar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.cadastro_projetoDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cadastro_producao_produtoBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cadastro_producao_produtoBindingSource3)).BeginInit();
@@ -118,7 +118,7 @@
             this.ComboBox_nome.DataSource = this.cadastro_producao_produtoBindingSource3;
             this.ComboBox_nome.DisplayMember = "Nome_colaborador";
             this.ComboBox_nome.FormattingEnabled = true;
-            this.ComboBox_nome.Location = new System.Drawing.Point(602, 35);
+            this.ComboBox_nome.Location = new System.Drawing.Point(578, 35);
             this.ComboBox_nome.Name = "ComboBox_nome";
             this.ComboBox_nome.Size = new System.Drawing.Size(160, 21);
             this.ComboBox_nome.TabIndex = 2;
@@ -143,7 +143,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(599, 19);
+            this.label1.Location = new System.Drawing.Point(575, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 13);
             this.label1.TabIndex = 3;
@@ -152,7 +152,7 @@
             // produto_modelo
             // 
             this.produto_modelo.AutoSize = true;
-            this.produto_modelo.Location = new System.Drawing.Point(787, 19);
+            this.produto_modelo.Location = new System.Drawing.Point(763, 19);
             this.produto_modelo.Name = "produto_modelo";
             this.produto_modelo.Size = new System.Drawing.Size(112, 13);
             this.produto_modelo.TabIndex = 5;
@@ -165,7 +165,7 @@
             this.comboBox2.BackColor = System.Drawing.SystemColors.MenuBar;
             this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.cadastro_producao_produtoBindingSource2, "Produto_modelo", true));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(790, 35);
+            this.comboBox2.Location = new System.Drawing.Point(766, 35);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(160, 21);
             this.comboBox2.TabIndex = 4;
@@ -174,7 +174,7 @@
             // situacao_produto
             // 
             this.situacao_produto.AutoSize = true;
-            this.situacao_produto.Location = new System.Drawing.Point(599, 66);
+            this.situacao_produto.Location = new System.Drawing.Point(575, 66);
             this.situacao_produto.Name = "situacao_produto";
             this.situacao_produto.Size = new System.Drawing.Size(61, 13);
             this.situacao_produto.TabIndex = 7;
@@ -185,7 +185,7 @@
             this.comboBox3.BackColor = System.Drawing.SystemColors.MenuBar;
             this.comboBox3.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.cadastro_producao_produtoBindingSource2, "Situacao", true));
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(602, 82);
+            this.comboBox3.Location = new System.Drawing.Point(578, 82);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(160, 21);
             this.comboBox3.TabIndex = 6;
@@ -194,7 +194,7 @@
             // projeto
             // 
             this.projeto.AutoSize = true;
-            this.projeto.Location = new System.Drawing.Point(981, 19);
+            this.projeto.Location = new System.Drawing.Point(957, 19);
             this.projeto.Name = "projeto";
             this.projeto.Size = new System.Drawing.Size(57, 13);
             this.projeto.TabIndex = 9;
@@ -207,7 +207,7 @@
             this.comboBox4.BackColor = System.Drawing.SystemColors.MenuBar;
             this.comboBox4.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.cadastro_producao_produtoBindingSource2, "Projeto", true));
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(984, 35);
+            this.comboBox4.Location = new System.Drawing.Point(960, 35);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(160, 21);
             this.comboBox4.TabIndex = 8;
@@ -216,7 +216,7 @@
             // serial_produto
             // 
             this.serial_produto.AutoSize = true;
-            this.serial_produto.Location = new System.Drawing.Point(981, 66);
+            this.serial_produto.Location = new System.Drawing.Point(957, 66);
             this.serial_produto.Name = "serial_produto";
             this.serial_produto.Size = new System.Drawing.Size(102, 13);
             this.serial_produto.TabIndex = 11;
@@ -229,7 +229,7 @@
             this.comboBox5.BackColor = System.Drawing.SystemColors.MenuBar;
             this.comboBox5.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.cadastro_producao_produtoBindingSource2, "Serial_number", true));
             this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(984, 82);
+            this.comboBox5.Location = new System.Drawing.Point(960, 82);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(160, 21);
             this.comboBox5.TabIndex = 10;
@@ -238,7 +238,7 @@
             // id_colaborador
             // 
             this.id_colaborador.AutoSize = true;
-            this.id_colaborador.Location = new System.Drawing.Point(787, 66);
+            this.id_colaborador.Location = new System.Drawing.Point(763, 66);
             this.id_colaborador.Name = "id_colaborador";
             this.id_colaborador.Size = new System.Drawing.Size(105, 13);
             this.id_colaborador.TabIndex = 13;
@@ -251,7 +251,7 @@
             this.comboBox6.BackColor = System.Drawing.SystemColors.MenuBar;
             this.comboBox6.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.cadastro_producao_produtoBindingSource2, "Colaboradores_id", true));
             this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(790, 82);
+            this.comboBox6.Location = new System.Drawing.Point(766, 82);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(160, 21);
             this.comboBox6.TabIndex = 12;
@@ -322,7 +322,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.cadastro_producao_produtoDataGridView2.DefaultCellStyle = dataGridViewCellStyle2;
             this.cadastro_producao_produtoDataGridView2.GridColor = System.Drawing.SystemColors.ActiveBorder;
-            this.cadastro_producao_produtoDataGridView2.Location = new System.Drawing.Point(37, 120);
+            this.cadastro_producao_produtoDataGridView2.Location = new System.Drawing.Point(22, 118);
             this.cadastro_producao_produtoDataGridView2.Name = "cadastro_producao_produtoDataGridView2";
             this.cadastro_producao_produtoDataGridView2.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -339,96 +339,15 @@
             this.cadastro_producao_produtoDataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.cadastro_producao_produtoDataGridView2.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.cadastro_producao_produtoDataGridView2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.cadastro_producao_produtoDataGridView2.Size = new System.Drawing.Size(1089, 348);
+            this.cadastro_producao_produtoDataGridView2.Size = new System.Drawing.Size(1267, 348);
             this.cadastro_producao_produtoDataGridView2.TabIndex = 13;
             this.cadastro_producao_produtoDataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cadastro_producao_produtoDataGridView2_CellContentClick);
-            // 
-            // dataGridViewTextBoxColumn21
-            // 
-            this.dataGridViewTextBoxColumn21.DataPropertyName = "Colaboradores_id";
-            this.dataGridViewTextBoxColumn21.HeaderText = "ID COLABORADOR";
-            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
-            this.dataGridViewTextBoxColumn21.ReadOnly = true;
-            this.dataGridViewTextBoxColumn21.Width = 120;
-            // 
-            // dataGridViewTextBoxColumn22
-            // 
-            this.dataGridViewTextBoxColumn22.DataPropertyName = "Nome_colaborador";
-            this.dataGridViewTextBoxColumn22.HeaderText = "NOME";
-            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
-            this.dataGridViewTextBoxColumn22.ReadOnly = true;
-            this.dataGridViewTextBoxColumn22.Width = 64;
-            // 
-            // dataGridViewTextBoxColumn23
-            // 
-            this.dataGridViewTextBoxColumn23.DataPropertyName = "data_inicio";
-            this.dataGridViewTextBoxColumn23.HeaderText = "DATA INÍCIO";
-            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
-            this.dataGridViewTextBoxColumn23.ReadOnly = true;
-            this.dataGridViewTextBoxColumn23.Width = 96;
-            // 
-            // dataGridViewTextBoxColumn24
-            // 
-            this.dataGridViewTextBoxColumn24.DataPropertyName = "Projeto";
-            this.dataGridViewTextBoxColumn24.HeaderText = "PROJETO";
-            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
-            this.dataGridViewTextBoxColumn24.ReadOnly = true;
-            this.dataGridViewTextBoxColumn24.Width = 82;
-            // 
-            // dataGridViewTextBoxColumn25
-            // 
-            this.dataGridViewTextBoxColumn25.DataPropertyName = "Produto_modelo";
-            this.dataGridViewTextBoxColumn25.HeaderText = "PRODUTO/MODELO";
-            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
-            this.dataGridViewTextBoxColumn25.ReadOnly = true;
-            this.dataGridViewTextBoxColumn25.Width = 137;
-            // 
-            // dataGridViewTextBoxColumn26
-            // 
-            this.dataGridViewTextBoxColumn26.DataPropertyName = "Serial_number";
-            this.dataGridViewTextBoxColumn26.HeaderText = "S/N";
-            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
-            this.dataGridViewTextBoxColumn26.ReadOnly = true;
-            this.dataGridViewTextBoxColumn26.Width = 52;
-            // 
-            // dataGridViewTextBoxColumn27
-            // 
-            this.dataGridViewTextBoxColumn27.DataPropertyName = "Situacao";
-            this.dataGridViewTextBoxColumn27.HeaderText = "STATUS";
-            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
-            this.dataGridViewTextBoxColumn27.ReadOnly = true;
-            this.dataGridViewTextBoxColumn27.Width = 75;
-            // 
-            // dataGridViewTextBoxColumn28
-            // 
-            this.dataGridViewTextBoxColumn28.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.dataGridViewTextBoxColumn28.DataPropertyName = "Observacao_produto";
-            this.dataGridViewTextBoxColumn28.HeaderText = "HISTÓRICO PRODUTO";
-            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
-            this.dataGridViewTextBoxColumn28.ReadOnly = true;
-            this.dataGridViewTextBoxColumn28.Width = 148;
-            // 
-            // dataGridViewTextBoxColumn29
-            // 
-            this.dataGridViewTextBoxColumn29.DataPropertyName = "Qtd_produto";
-            this.dataGridViewTextBoxColumn29.HeaderText = "QUANTIDADE";
-            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
-            this.dataGridViewTextBoxColumn29.ReadOnly = true;
-            this.dataGridViewTextBoxColumn29.Width = 103;
-            // 
-            // dataGridViewTextBoxColumn30
-            // 
-            this.dataGridViewTextBoxColumn30.DataPropertyName = "data_termino";
-            this.dataGridViewTextBoxColumn30.HeaderText = "DATA TÉRMINO";
-            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
-            this.dataGridViewTextBoxColumn30.ReadOnly = true;
-            this.dataGridViewTextBoxColumn30.Width = 114;
             // 
             // date_pic_inicio
             // 
             this.date_pic_inicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.date_pic_inicio.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.date_pic_inicio.Location = new System.Drawing.Point(98, 72);
+            this.date_pic_inicio.Location = new System.Drawing.Point(37, 73);
             this.date_pic_inicio.Name = "date_pic_inicio";
             this.date_pic_inicio.Size = new System.Drawing.Size(125, 20);
             this.date_pic_inicio.TabIndex = 14;
@@ -438,7 +357,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(117, 51);
+            this.label2.Location = new System.Drawing.Point(56, 52);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 15);
             this.label2.TabIndex = 15;
@@ -448,7 +367,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(275, 52);
+            this.label3.Location = new System.Drawing.Point(240, 52);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 15);
             this.label3.TabIndex = 17;
@@ -459,7 +378,7 @@
             this.date_pic_final.CalendarMonthBackground = System.Drawing.Color.Transparent;
             this.date_pic_final.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.date_pic_final.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.date_pic_final.Location = new System.Drawing.Point(256, 73);
+            this.date_pic_final.Location = new System.Drawing.Point(221, 73);
             this.date_pic_final.Name = "date_pic_final";
             this.date_pic_final.Size = new System.Drawing.Size(125, 20);
             this.date_pic_final.TabIndex = 16;
@@ -472,7 +391,7 @@
             this.button_limpar_filtro.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button_limpar_filtro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_limpar_filtro.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button_limpar_filtro.Location = new System.Drawing.Point(439, 69);
+            this.button_limpar_filtro.Location = new System.Drawing.Point(426, 69);
             this.button_limpar_filtro.Name = "button_limpar_filtro";
             this.button_limpar_filtro.Size = new System.Drawing.Size(75, 23);
             this.button_limpar_filtro.TabIndex = 18;
@@ -485,7 +404,7 @@
             this.labelTotalP.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.labelTotalP.AutoSize = true;
             this.labelTotalP.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotalP.Location = new System.Drawing.Point(46, 498);
+            this.labelTotalP.Location = new System.Drawing.Point(26, 498);
             this.labelTotalP.Name = "labelTotalP";
             this.labelTotalP.Size = new System.Drawing.Size(46, 13);
             this.labelTotalP.TabIndex = 19;
@@ -499,7 +418,7 @@
             this.total_produtos.AutoSize = true;
             this.total_produtos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.total_produtos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.total_produtos.Location = new System.Drawing.Point(46, 476);
+            this.total_produtos.Location = new System.Drawing.Point(26, 476);
             this.total_produtos.Name = "total_produtos";
             this.total_produtos.Size = new System.Drawing.Size(124, 13);
             this.total_produtos.TabIndex = 20;
@@ -517,19 +436,107 @@
             this.button_voltar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlLight;
             this.button_voltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_voltar.ForeColor = System.Drawing.Color.Transparent;
-            this.button_voltar.Location = new System.Drawing.Point(12, 12);
+            this.button_voltar.Location = new System.Drawing.Point(5, 12);
             this.button_voltar.Name = "button_voltar";
             this.button_voltar.Size = new System.Drawing.Size(47, 36);
             this.button_voltar.TabIndex = 21;
             this.button_voltar.UseVisualStyleBackColor = false;
             this.button_voltar.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // dataGridViewTextBoxColumn21
+            // 
+            this.dataGridViewTextBoxColumn21.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dataGridViewTextBoxColumn21.DataPropertyName = "Colaboradores_id";
+            this.dataGridViewTextBoxColumn21.HeaderText = "ID COLABORADOR";
+            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+            this.dataGridViewTextBoxColumn21.ReadOnly = true;
+            this.dataGridViewTextBoxColumn21.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn22
+            // 
+            this.dataGridViewTextBoxColumn22.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn22.DataPropertyName = "Nome_colaborador";
+            this.dataGridViewTextBoxColumn22.HeaderText = "NOME";
+            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
+            this.dataGridViewTextBoxColumn22.ReadOnly = true;
+            this.dataGridViewTextBoxColumn22.Width = 64;
+            // 
+            // dataGridViewTextBoxColumn23
+            // 
+            this.dataGridViewTextBoxColumn23.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.dataGridViewTextBoxColumn23.DataPropertyName = "data_inicio";
+            this.dataGridViewTextBoxColumn23.HeaderText = "DATA INÍCIO";
+            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
+            this.dataGridViewTextBoxColumn23.ReadOnly = true;
+            this.dataGridViewTextBoxColumn23.Width = 96;
+            // 
+            // dataGridViewTextBoxColumn24
+            // 
+            this.dataGridViewTextBoxColumn24.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn24.DataPropertyName = "Projeto";
+            this.dataGridViewTextBoxColumn24.HeaderText = "PROJETO";
+            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            this.dataGridViewTextBoxColumn24.ReadOnly = true;
+            this.dataGridViewTextBoxColumn24.Width = 82;
+            // 
+            // dataGridViewTextBoxColumn25
+            // 
+            this.dataGridViewTextBoxColumn25.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn25.DataPropertyName = "Produto_modelo";
+            this.dataGridViewTextBoxColumn25.HeaderText = "PRODUTO/MODELO";
+            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
+            this.dataGridViewTextBoxColumn25.ReadOnly = true;
+            this.dataGridViewTextBoxColumn25.Width = 137;
+            // 
+            // dataGridViewTextBoxColumn26
+            // 
+            this.dataGridViewTextBoxColumn26.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dataGridViewTextBoxColumn26.DataPropertyName = "Serial_number";
+            this.dataGridViewTextBoxColumn26.HeaderText = "S/N";
+            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
+            this.dataGridViewTextBoxColumn26.ReadOnly = true;
+            this.dataGridViewTextBoxColumn26.Width = 90;
+            // 
+            // dataGridViewTextBoxColumn27
+            // 
+            this.dataGridViewTextBoxColumn27.DataPropertyName = "Situacao";
+            this.dataGridViewTextBoxColumn27.HeaderText = "STATUS";
+            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
+            this.dataGridViewTextBoxColumn27.ReadOnly = true;
+            this.dataGridViewTextBoxColumn27.Width = 85;
+            // 
+            // dataGridViewTextBoxColumn28
+            // 
+            this.dataGridViewTextBoxColumn28.DataPropertyName = "Observacao_produto";
+            this.dataGridViewTextBoxColumn28.HeaderText = "HISTÓRICO";
+            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
+            this.dataGridViewTextBoxColumn28.ReadOnly = true;
+            this.dataGridViewTextBoxColumn28.Width = 80;
+            // 
+            // dataGridViewTextBoxColumn29
+            // 
+            this.dataGridViewTextBoxColumn29.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dataGridViewTextBoxColumn29.DataPropertyName = "Qtd_produto";
+            this.dataGridViewTextBoxColumn29.HeaderText = "QUANTIDADE";
+            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
+            this.dataGridViewTextBoxColumn29.ReadOnly = true;
+            this.dataGridViewTextBoxColumn29.Width = 90;
+            // 
+            // dataGridViewTextBoxColumn30
+            // 
+            this.dataGridViewTextBoxColumn30.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.dataGridViewTextBoxColumn30.DataPropertyName = "data_termino";
+            this.dataGridViewTextBoxColumn30.HeaderText = "DATA TÉRMINO";
+            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
+            this.dataGridViewTextBoxColumn30.ReadOnly = true;
+            this.dataGridViewTextBoxColumn30.Width = 114;
+            // 
             // listagem_producao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(1158, 550);
+            this.ClientSize = new System.Drawing.Size(1301, 550);
             this.Controls.Add(this.button_voltar);
             this.Controls.Add(this.total_produtos);
             this.Controls.Add(this.labelTotalP);
