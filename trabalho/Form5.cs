@@ -30,9 +30,17 @@ namespace trabalho
             int rowCount = colaboradoresDataGridView.Rows.Count;
 
             // SE A LINHA DE NOVA ENTRADA ESTIVER VISÍVEL, SUBITRAI POR 1 DA CONTAGEM TOTAL
+            if (colaboradoresDataGridView.AllowUserToAddRows)
+            {
+                rowCount -= 1;
+            }
 
-
+            // Atualiza o texto do Label com a contagem de linhas
+            qtd_colaborador.Text = "Total de colaboradores: " + rowCount.ToString();
         }
+
+
+    
 
         private void Form5_Load(object sender, EventArgs e)
         {
