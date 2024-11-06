@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(listar_colaborad));
             this.cadastro_projetoDataSet2 = new trabalho.Cadastro_projetoDataSet2();
             this.colaboradoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -94,13 +94,13 @@
             this.colaboradoresDataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
             this.colaboradoresDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.colaboradoresDataGridView.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.colaboradoresDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.colaboradoresDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.colaboradoresDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.colaboradoresDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -109,38 +109,41 @@
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn6});
             this.colaboradoresDataGridView.DataSource = this.colaboradoresBindingSource;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.colaboradoresDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.colaboradoresDataGridView.DefaultCellStyle = dataGridViewCellStyle5;
             this.colaboradoresDataGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
-            this.colaboradoresDataGridView.Location = new System.Drawing.Point(12, 107);
+            this.colaboradoresDataGridView.Location = new System.Drawing.Point(16, 132);
+            this.colaboradoresDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.colaboradoresDataGridView.Name = "colaboradoresDataGridView";
             this.colaboradoresDataGridView.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.colaboradoresDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.colaboradoresDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.colaboradoresDataGridView.RowHeadersVisible = false;
             this.colaboradoresDataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.colaboradoresDataGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.colaboradoresDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.colaboradoresDataGridView.Size = new System.Drawing.Size(796, 308);
+            this.colaboradoresDataGridView.Size = new System.Drawing.Size(1061, 379);
             this.colaboradoresDataGridView.TabIndex = 0;
             this.colaboradoresDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.colaboradoresDataGridView_CellContentClick_1);
+            this.colaboradoresDataGridView.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.colaboradoresDataGridView_DataBindingComplete);
             // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "Id_colaborador";
             this.dataGridViewTextBoxColumn1.HeaderText = "ID COLABORADOR";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
             this.dataGridViewTextBoxColumn1.Width = 155;
@@ -149,6 +152,7 @@
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "Nome_colaborador";
             this.dataGridViewTextBoxColumn2.HeaderText = "NOME COLABORADOR";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
             this.dataGridViewTextBoxColumn2.Width = 156;
@@ -157,6 +161,7 @@
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "Data_admissao";
             this.dataGridViewTextBoxColumn3.HeaderText = "DATA DE CADASTRO";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
             this.dataGridViewTextBoxColumn3.Width = 155;
@@ -165,6 +170,7 @@
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "Funcao";
             this.dataGridViewTextBoxColumn4.HeaderText = "FUNÇÃO";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
             this.dataGridViewTextBoxColumn4.Width = 156;
@@ -173,6 +179,7 @@
             // 
             this.dataGridViewTextBoxColumn6.DataPropertyName = "Observacao_sobre_colaborador";
             this.dataGridViewTextBoxColumn6.HeaderText = "PONTOS FORTES COLABORADOR";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
             this.dataGridViewTextBoxColumn6.Width = 155;
@@ -180,9 +187,10 @@
             // Data_inicio_pic
             // 
             this.Data_inicio_pic.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.Data_inicio_pic.Location = new System.Drawing.Point(17, 71);
+            this.Data_inicio_pic.Location = new System.Drawing.Point(23, 87);
+            this.Data_inicio_pic.Margin = new System.Windows.Forms.Padding(4);
             this.Data_inicio_pic.Name = "Data_inicio_pic";
-            this.Data_inicio_pic.Size = new System.Drawing.Size(126, 20);
+            this.Data_inicio_pic.Size = new System.Drawing.Size(167, 22);
             this.Data_inicio_pic.TabIndex = 1;
             this.Data_inicio_pic.Value = new System.DateTime(2023, 1, 1, 0, 0, 0, 0);
             this.Data_inicio_pic.ValueChanged += new System.EventHandler(this.Data_inicio_ValueChanged);
@@ -190,9 +198,10 @@
             // Data_fim_pic
             // 
             this.Data_fim_pic.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.Data_fim_pic.Location = new System.Drawing.Point(177, 71);
+            this.Data_fim_pic.Location = new System.Drawing.Point(236, 87);
+            this.Data_fim_pic.Margin = new System.Windows.Forms.Padding(4);
             this.Data_fim_pic.Name = "Data_fim_pic";
-            this.Data_fim_pic.Size = new System.Drawing.Size(130, 20);
+            this.Data_fim_pic.Size = new System.Drawing.Size(172, 22);
             this.Data_fim_pic.TabIndex = 2;
             this.Data_fim_pic.ValueChanged += new System.EventHandler(this.Data_fim_ValueChanged);
             // 
@@ -204,9 +213,10 @@
             this.nome_colaboradorComboBox.DataSource = this.colaboradoresBindingSource1;
             this.nome_colaboradorComboBox.DisplayMember = "Nome_colaborador";
             this.nome_colaboradorComboBox.FormattingEnabled = true;
-            this.nome_colaboradorComboBox.Location = new System.Drawing.Point(497, 70);
+            this.nome_colaboradorComboBox.Location = new System.Drawing.Point(663, 86);
+            this.nome_colaboradorComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.nome_colaboradorComboBox.Name = "nome_colaboradorComboBox";
-            this.nome_colaboradorComboBox.Size = new System.Drawing.Size(150, 21);
+            this.nome_colaboradorComboBox.Size = new System.Drawing.Size(199, 24);
             this.nome_colaboradorComboBox.TabIndex = 3;
             this.nome_colaboradorComboBox.ValueMember = "Nome_colaborador";
             this.nome_colaboradorComboBox.SelectedIndexChanged += new System.EventHandler(this.nome_colaboradorComboBox_SelectedIndexChanged);
@@ -222,9 +232,10 @@
             this.Button_limpar_filtro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Button_limpar_filtro.FlatAppearance.BorderColor = System.Drawing.SystemColors.Desktop;
             this.Button_limpar_filtro.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.Button_limpar_filtro.Location = new System.Drawing.Point(358, 68);
+            this.Button_limpar_filtro.Location = new System.Drawing.Point(477, 84);
+            this.Button_limpar_filtro.Margin = new System.Windows.Forms.Padding(4);
             this.Button_limpar_filtro.Name = "Button_limpar_filtro";
-            this.Button_limpar_filtro.Size = new System.Drawing.Size(75, 23);
+            this.Button_limpar_filtro.Size = new System.Drawing.Size(100, 28);
             this.Button_limpar_filtro.TabIndex = 0;
             this.Button_limpar_filtro.Text = "Limpar Filtro";
             this.Button_limpar_filtro.UseVisualStyleBackColor = false;
@@ -233,9 +244,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(499, 54);
+            this.label1.Location = new System.Drawing.Point(665, 66);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 13);
+            this.label1.Size = new System.Drawing.Size(123, 16);
             this.label1.TabIndex = 5;
             this.label1.Text = "Nome Colaborador";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -243,18 +255,20 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 51);
+            this.label2.Location = new System.Drawing.Point(19, 63);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 13);
+            this.label2.Size = new System.Drawing.Size(85, 16);
             this.label2.TabIndex = 6;
             this.label2.Text = "DATA INÍCIO";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(183, 51);
+            this.label3.Location = new System.Drawing.Point(244, 63);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 13);
+            this.label3.Size = new System.Drawing.Size(69, 16);
             this.label3.TabIndex = 7;
             this.label3.Text = "DATA FIM";
             // 
@@ -264,9 +278,10 @@
             this.Funcao_ComboBox.DataSource = this.colaboradoresBindingSource1;
             this.Funcao_ComboBox.DisplayMember = "Funcao";
             this.Funcao_ComboBox.FormattingEnabled = true;
-            this.Funcao_ComboBox.Location = new System.Drawing.Point(497, 30);
+            this.Funcao_ComboBox.Location = new System.Drawing.Point(663, 37);
+            this.Funcao_ComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.Funcao_ComboBox.Name = "Funcao_ComboBox";
-            this.Funcao_ComboBox.Size = new System.Drawing.Size(150, 21);
+            this.Funcao_ComboBox.Size = new System.Drawing.Size(199, 24);
             this.Funcao_ComboBox.TabIndex = 8;
             this.Funcao_ComboBox.ValueMember = "Funcao";
             this.Funcao_ComboBox.SelectedIndexChanged += new System.EventHandler(this.Funcao_ComboBox_SelectedIndexChanged);
@@ -274,18 +289,20 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(494, 14);
+            this.label4.Location = new System.Drawing.Point(659, 17);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 13);
+            this.label4.Size = new System.Drawing.Size(131, 16);
             this.label4.TabIndex = 9;
             this.label4.Text = "Função Colaborador";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(655, 54);
+            this.label6.Location = new System.Drawing.Point(873, 66);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(78, 13);
+            this.label6.Size = new System.Drawing.Size(99, 16);
             this.label6.TabIndex = 13;
             this.label6.Text = "ID Colaborador";
             // 
@@ -297,9 +314,10 @@
             this.comboBox_Id_colaborador.DataSource = this.colaboradoresBindingSource1;
             this.comboBox_Id_colaborador.DisplayMember = "Id_colaborador";
             this.comboBox_Id_colaborador.FormattingEnabled = true;
-            this.comboBox_Id_colaborador.Location = new System.Drawing.Point(658, 70);
+            this.comboBox_Id_colaborador.Location = new System.Drawing.Point(877, 86);
+            this.comboBox_Id_colaborador.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox_Id_colaborador.Name = "comboBox_Id_colaborador";
-            this.comboBox_Id_colaborador.Size = new System.Drawing.Size(150, 21);
+            this.comboBox_Id_colaborador.Size = new System.Drawing.Size(199, 24);
             this.comboBox_Id_colaborador.TabIndex = 12;
             this.comboBox_Id_colaborador.ValueMember = "Id_colaborador";
             this.comboBox_Id_colaborador.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
@@ -315,11 +333,13 @@
             this.button_voltar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlLight;
             this.button_voltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_voltar.ForeColor = System.Drawing.Color.Transparent;
-            this.button_voltar.Location = new System.Drawing.Point(2, 6);
+            this.button_voltar.Location = new System.Drawing.Point(3, 7);
+            this.button_voltar.Margin = new System.Windows.Forms.Padding(4);
             this.button_voltar.Name = "button_voltar";
-            this.button_voltar.Size = new System.Drawing.Size(47, 36);
+            this.button_voltar.Size = new System.Drawing.Size(63, 44);
             this.button_voltar.TabIndex = 22;
             this.button_voltar.UseVisualStyleBackColor = false;
+            this.button_voltar.Click += new System.EventHandler(this.button_voltar_Click);
             // 
             // qtd_colaborador
             // 
@@ -328,19 +348,20 @@
             this.qtd_colaborador.AutoSize = true;
             this.qtd_colaborador.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.qtd_colaborador.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.qtd_colaborador.Location = new System.Drawing.Point(14, 429);
+            this.qtd_colaborador.Location = new System.Drawing.Point(19, 528);
+            this.qtd_colaborador.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.qtd_colaborador.Name = "qtd_colaborador";
-            this.qtd_colaborador.Size = new System.Drawing.Size(159, 13);
+            this.qtd_colaborador.Size = new System.Drawing.Size(254, 17);
             this.qtd_colaborador.TabIndex = 23;
-            this.qtd_colaborador.Text = "TOTAL DE COLABORADORES";
+            this.qtd_colaborador.Text = "QUANTIDADE DE COLABORADORES:";
             this.qtd_colaborador.Click += new System.EventHandler(this.qtd_colaborador_Click);
             // 
             // listar_colaborad
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(836, 472);
+            this.ClientSize = new System.Drawing.Size(1115, 581);
             this.Controls.Add(this.qtd_colaborador);
             this.Controls.Add(this.button_voltar);
             this.Controls.Add(this.label6);
@@ -355,6 +376,7 @@
             this.Controls.Add(this.Data_fim_pic);
             this.Controls.Add(this.Data_inicio_pic);
             this.Controls.Add(this.colaboradoresDataGridView);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "listar_colaborad";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form5";
