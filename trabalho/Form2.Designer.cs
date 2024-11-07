@@ -199,6 +199,7 @@
             // data_inicioDateTimePicker
             // 
             this.data_inicioDateTimePicker.AllowDrop = true;
+            this.data_inicioDateTimePicker.CustomFormat = "";
             this.data_inicioDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.cadastro_producao_produtoBindingSource, "data_inicio", true));
             this.data_inicioDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.data_inicioDateTimePicker.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -306,12 +307,11 @@
             // 
             // bindingNavigatorAddNewItem
             // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.bindingNavigatorAddNewItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bindingNavigatorAddNewItem.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(45, 30);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(45, 27);
             this.bindingNavigatorAddNewItem.Text = "NOVO";
             this.bindingNavigatorAddNewItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.bindingNavigatorAddNewItem.Click += new System.EventHandler(this.bindingNavigatorAddNewItem_Click);
@@ -343,7 +343,7 @@
             this.cadastro_producao_produtoBindingNavigator.PositionItem = null;
             this.cadastro_producao_produtoBindingNavigator.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.cadastro_producao_produtoBindingNavigator.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cadastro_producao_produtoBindingNavigator.Size = new System.Drawing.Size(623, 33);
+            this.cadastro_producao_produtoBindingNavigator.Size = new System.Drawing.Size(623, 30);
             this.cadastro_producao_produtoBindingNavigator.TabIndex = 0;
             this.cadastro_producao_produtoBindingNavigator.Text = "bindingNavigator1";
             this.cadastro_producao_produtoBindingNavigator.RefreshItems += new System.EventHandler(this.cadastro_producao_produtoBindingNavigator_RefreshItems);
@@ -351,18 +351,18 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 33);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 30);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 33);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 30);
             // 
             // cadastro_producao_produtoBindingNavigatorSaveItem
             // 
             this.cadastro_producao_produtoBindingNavigatorSaveItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cadastro_producao_produtoBindingNavigatorSaveItem.Name = "cadastro_producao_produtoBindingNavigatorSaveItem";
-            this.cadastro_producao_produtoBindingNavigatorSaveItem.Size = new System.Drawing.Size(56, 30);
+            this.cadastro_producao_produtoBindingNavigatorSaveItem.Size = new System.Drawing.Size(56, 27);
             this.cadastro_producao_produtoBindingNavigatorSaveItem.Text = "SALVAR";
             this.cadastro_producao_produtoBindingNavigatorSaveItem.Click += new System.EventHandler(this.cadastro_producao_produtoBindingNavigatorSaveItem_Click);
             // 

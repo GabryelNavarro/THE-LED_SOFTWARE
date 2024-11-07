@@ -12,11 +12,14 @@ using System.Windows.Forms;
 namespace trabalho
 {
     public partial class form_principal : Form
+
     {
+
         public form_principal()
         {
             InitializeComponent();
-        }
+           
+    }
 
         private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
         {
