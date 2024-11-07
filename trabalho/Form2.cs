@@ -91,7 +91,7 @@ namespace trabalho
 
             catch (System.InvalidOperationException)
             {
-                MessageBox.Show("Por favor, verifique sua conexão com a internet e tente novamente", "Sem Aceeso á Internet", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Por favor, verifique sua conexão com a internet e tente novamente", "Erro de rede ", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 form_principal carregar = new form_principal();
                 carregar.ShowDialog();
                 

@@ -404,7 +404,7 @@
             this.Name = "cadastro_produto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "    THE LED - CADASTRAR PRODUTOS";
-            this.TransparencyKey = System.Drawing.Color.Transparent;
+            this.TransparencyKey = System.Drawing.SystemColors.HotTrack;
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cadastro_projetoDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cadastro_producao_produtoBindingSource)).EndInit();

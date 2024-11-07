@@ -203,7 +203,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "  THE LED - GERAL";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
-            this.Load += new System.EventHandler(this.Form1_Load);
+            
             ((System.ComponentModel.ISupportInitialize)(this.cadastro_producao_produtoBindingNavigator)).EndInit();
             this.cadastro_producao_produtoBindingNavigator.ResumeLayout(false);
             this.cadastro_producao_produtoBindingNavigator.PerformLayout();

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,10 +15,12 @@ namespace trabalho
     public partial class form_principal : Form
 
     {
-
+        private readonly string stringConexaoEsperada = @"Data Source=10.1.0.112;Initial Catalog=Cadastro_projeto;Persist Security Info=True;
+            User ID=admin_cadastro;Password=itel11TH_proTheled@2025;Encrypt=False;";
         public form_principal()
         {
             InitializeComponent();
+            this.Load += new EventHandler(form_principal_Load);
            
     }
 
@@ -34,11 +37,30 @@ namespace trabalho
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void form_principal_Load(object sender, EventArgs e)
         {
-            // TODO: esta linha de código carrega dados na tabela 'cadastro_projetoDataSet.cadastro_producao_produto'. Você pode movê-la ou removê-la conforme necessário.
+           
+            if (!EstaEmRedeLocal())
+            {
+                DialogResult result = MessageBox.Show(
+                    "Este sistema foi projetado para funcionar exclusivamente em uma rede local. Se você estiver utilizando uma conexão externa, o sistema não funcionará.",
+                    "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning
+                );
 
+                
+            }
         }
+
+        private bool EstaEmRedeLocal()
+        {
+            
+
+            return false;
+        }
+
+
+
+
 
         private void cadastro_producao_produtoBindingNavigator_RefreshItems(object sender, EventArgs e)
         {
