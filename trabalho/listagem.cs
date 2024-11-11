@@ -163,7 +163,7 @@
                     .Distinct()
                     .ToList();
                 nome_projeto.Insert(0, "TODOS PROJETOS");
-                comboBox4.DataSource = nome_projeto;
+                
 
                 // Preencher a ComboBox de Situação
                 var situacao = cadastro_projetoDataSet3.cadastro_producao_produto

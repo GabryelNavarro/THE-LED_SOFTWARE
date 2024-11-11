@@ -15,8 +15,7 @@ namespace trabalho
     public partial class form_principal : Form
 
     {
-        private readonly string stringConexaoEsperada = @"Data Source=10.1.0.112;Initial Catalog=Cadastro_projeto;Persist Security Info=True;
-            User ID=admin_cadastro;Password=itel11TH_proTheled@2025;Encrypt=False;";
+        
         public form_principal()
         {
             InitializeComponent();
@@ -191,6 +190,11 @@ namespace trabalho
         }
 
         private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void form_principal_Load_1(object sender, EventArgs e)
         {
 
         }
