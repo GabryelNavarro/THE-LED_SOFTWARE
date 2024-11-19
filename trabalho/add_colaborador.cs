@@ -22,6 +22,8 @@ namespace trabalho
 
             // Define a data atual como valor padrão para novos registros
             SetDefaultDates();
+
+            data_admissaoDateTimePicker.Value = DateTime.Now;
         }
 
         private void colaboradoresBindingNavigatorSaveItem_Click(object sender, EventArgs e)

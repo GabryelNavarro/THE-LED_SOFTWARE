@@ -90,7 +90,7 @@
             this.Button_logar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_logar.Location = new System.Drawing.Point(179, 19);
             this.Button_logar.Name = "Button_logar";
-            this.Button_logar.Size = new System.Drawing.Size(39, 22);
+            this.Button_logar.Size = new System.Drawing.Size(51, 22);
             this.Button_logar.TabIndex = 6;
             this.Button_logar.Text = "OK";
             this.Button_logar.UseVisualStyleBackColor = false;
