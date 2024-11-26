@@ -77,7 +77,7 @@
             this.cadastro_producao_produtoBindingNavigator.MovePreviousItem = null;
             this.cadastro_producao_produtoBindingNavigator.Name = "cadastro_producao_produtoBindingNavigator";
             this.cadastro_producao_produtoBindingNavigator.PositionItem = null;
-            this.cadastro_producao_produtoBindingNavigator.Size = new System.Drawing.Size(758, 27);
+            this.cadastro_producao_produtoBindingNavigator.Size = new System.Drawing.Size(1011, 33);
             this.cadastro_producao_produtoBindingNavigator.Stretch = true;
             this.cadastro_producao_produtoBindingNavigator.TabIndex = 0;
             this.cadastro_producao_produtoBindingNavigator.TabStop = true;
@@ -97,7 +97,7 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 33);
             // 
             // toolStripButton1
             // 
@@ -109,7 +109,7 @@
             this.toolStripButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.SystemColors.ActiveBorder;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(79, 24);
+            this.toolStripButton1.Size = new System.Drawing.Size(98, 30);
             this.toolStripButton1.Text = "CADASTRO";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
@@ -117,27 +117,27 @@
             // 
             this.produtosToolStripMenuItem.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
-            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
+            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(297, 26);
             this.produtosToolStripMenuItem.Text = "INCLUIR PRODUTOS";
             this.produtosToolStripMenuItem.Click += new System.EventHandler(this.produtosToolStripMenuItem_Click_1);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(239, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(294, 6);
             // 
             // colaboradoresToolStripMenuItem
             // 
             this.colaboradoresToolStripMenuItem.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.colaboradoresToolStripMenuItem.Name = "colaboradoresToolStripMenuItem";
-            this.colaboradoresToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
+            this.colaboradoresToolStripMenuItem.Size = new System.Drawing.Size(297, 26);
             this.colaboradoresToolStripMenuItem.Text = "CADASTRAR COLABORADOR";
             this.colaboradoresToolStripMenuItem.Click += new System.EventHandler(this.colaboradoresToolStripMenuItem_Click);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 33);
             // 
             // toolStripButton2
             // 
@@ -148,7 +148,7 @@
             this.colaboradoresToolStripMenuItem1});
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(67, 24);
+            this.toolStripButton2.Size = new System.Drawing.Size(81, 30);
             this.toolStripButton2.Text = "SISTEMA";
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
@@ -156,20 +156,20 @@
             // 
             this.produtosToolStripMenuItem1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.produtosToolStripMenuItem1.Name = "produtosToolStripMenuItem1";
-            this.produtosToolStripMenuItem1.Size = new System.Drawing.Size(257, 22);
+            this.produtosToolStripMenuItem1.Size = new System.Drawing.Size(316, 26);
             this.produtosToolStripMenuItem1.Text = "PRODUTOS NO SISTEMA";
             this.produtosToolStripMenuItem1.Click += new System.EventHandler(this.produtosToolStripMenuItem1_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(254, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(313, 6);
             // 
             // colaboradoresToolStripMenuItem1
             // 
             this.colaboradoresToolStripMenuItem1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.colaboradoresToolStripMenuItem1.Name = "colaboradoresToolStripMenuItem1";
-            this.colaboradoresToolStripMenuItem1.Size = new System.Drawing.Size(257, 22);
+            this.colaboradoresToolStripMenuItem1.Size = new System.Drawing.Size(316, 26);
             this.colaboradoresToolStripMenuItem1.Text = "COLABORADORES NO SISTEMA";
             this.colaboradoresToolStripMenuItem1.Click += new System.EventHandler(this.colaboradoresToolStripMenuItem1_Click);
             // 
@@ -190,13 +190,14 @@
             // 
             // form_principal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(758, 450);
+            this.ClientSize = new System.Drawing.Size(1011, 554);
             this.Controls.Add(this.cadastro_producao_produtoBindingNavigator);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "form_principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
